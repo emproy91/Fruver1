@@ -1,5 +1,6 @@
 package main;
 
+import models.FruitH;
 import stakeholders.*;
 
 // import java.text.DateFormat;
@@ -10,20 +11,28 @@ public class Main {
     public static void main(String[] args) {
 
         // Person.
+        int idAcc1 = 111888 ;
         Date birth = new Date( 2002-1900,02-1,20);
-
-        Person p1 = new Person(111888, "Karla", "Giraldo", "Garcia", (float) 1.70, birth);
-
+        Person p1 = new Person(idAcc1, "Karla", "Giraldo", "Garcia", (float) 1.70, birth);
         p1.showPerson();
 
         Date birth2 = new Date( 1960-1900,02-1,20);
-        Person p2 = new Person(222999, "Mike", "Ramone", "Rojas", (float) 1.90, birth2);
-
+        Person p2 = new Person(idAcc1, "Mike", "Ramone", "Rojas", (float) 1.90, birth2);
         p2.showPerson();
 
+
+        ArrayList<String> colors = new ArrayList();
+        colors.add( "green" );
+        colors.add( "red");
+        colors.add( "yellow");
+        FruitH fh1 = new FruitH("Tomato", (float) 2.6, colors);
+
+        System.out.println( fh1.toString() );
+
+/*
         // Account.
         BankAccount bankAccount1 = new BankAccount();
-        bankAccount1.setAccountNumber( 123456 );
+        bankAccount1.setAccountNumber( idAcc1+1 );
         bankAccount1.setActivated( true );
         bankAccount1.showAccount();
 
@@ -51,5 +60,7 @@ public class Main {
         vegetable1.showVegetable(colorsV);
 
 
+ */
     }
+
 }

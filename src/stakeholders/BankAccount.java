@@ -4,9 +4,6 @@ public class BankAccount {
     private int accountNumber;
     protected boolean activated;
 
-    private Object p1;
-    int a = Person.getiD();
-
     public int getAccountNumber() {
         return accountNumber;
     }
@@ -26,7 +23,6 @@ public class BankAccount {
     public void showAccount() {
         System.out.println("Number: " + accountNumber);
         System.out.println("Is active? : " + activated);
-        System.out.println("ID: " + a);
         System.out.println("__");
 
     }

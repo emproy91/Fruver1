@@ -5,12 +5,12 @@ import java.util.Date;
 
 public class Person {
 
-    public static int iD;
+    public int iD;
     public String name;
-    private String lastName1;
-    private String lastName2;
-    float height;
-    Date dateBirth;
+    public String lastName1;
+    public String lastName2;
+    public float height;
+    public Date dateBirth;
 
     // Constructor.
     public Person(int idp, String n, String ln1, String ln2, float h, Date db){
@@ -48,8 +48,5 @@ public class Person {
         System.out.println("Age: " + showAge());
         System.out.println("__");
 
-    }
-    public static int getiD() {
-        return iD;
     }
 }
