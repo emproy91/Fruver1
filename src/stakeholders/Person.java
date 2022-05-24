@@ -24,9 +24,8 @@ public class Person {
 
     private int showAge () {
 
-        // Date birth = dateBirth;
         Date actual = new Date();
-        System.out.println(actual);
+        // System.out.println(actual);
         int yActual = actual.getYear();
         int yBirth = dateBirth.getYear();
         int age = 0;
@@ -48,5 +47,13 @@ public class Person {
         System.out.println("Age: " + showAge());
         System.out.println("__");
 
+    }
+
+    public void setiD(int iD) {
+        this.iD = iD;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

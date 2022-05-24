@@ -1,25 +1,22 @@
 package models;
 
-import java.util.ArrayList;
-
 public abstract class Product {
     public String name;
     private float averageWeight;
+
+    public static int un;
 
     public Product(String name, float averageWeight) {
         super();
         this.name = name;
         this.averageWeight = averageWeight;
-    }
-
-    public Product() {
-        super();
+        un ++;
     }
 
     @Override
     public String toString() {
         return  "name= '" + name + '\'' +
-                ", averageWeight= " + averageWeight ;
+                ", averageWeight= " + averageWeight + ",";
     }
 
     public String getName() {
